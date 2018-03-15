@@ -9,6 +9,7 @@ const app = express();
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
+
 app.get('/time', (req, res) => {
     const datetime = new Date().toISOString();
     res.send(datetime);
